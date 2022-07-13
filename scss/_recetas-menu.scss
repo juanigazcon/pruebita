@@ -1,0 +1,132 @@
+@mixin animation ($animation,$animation-duration) {
+    animation: $animation;
+    animation-duration: $animation-duration;
+}
+ul {
+    font-family: "lexend";
+    background-color: rgb(225, 206, 178);
+    color: rgb(121, 66, 69);
+    font-weight: bolder;
+    line-height: 50px;
+    font-size: 110%;
+    z-index: 3;
+    #color {
+      color: rgb(121, 66, 69);
+    }
+    @media screen and (max-width: 991px) {
+      .chau {
+        display: none;
+      }
+    }
+    ul {
+      position: absolute;
+      display: none;
+      font-size: 100%;
+      li {
+        &:hover {
+          background-color: rgb(180, 154, 127);
+          #color {
+            color: rgb(121, 66, 69);
+          }
+        }
+      }
+    }
+    li {
+      position: relative;
+      &:hover ul {
+        display: block;
+      }
+      a {
+        color: rgb(121, 66, 69);
+        text-decoration: none;
+      }
+    }
+    .header__productos {
+      li {
+        display: block;
+        background-color: rgb(221, 183, 149);
+        color: rgb(121, 66, 69);
+        font-size: 100%;
+        width: 180%;
+        padding: 10% 10% 10% 20%;
+        margin-left: -20%;
+        z-index: 4;
+        transition: background-color 0.25s;
+      }
+    }
+    .header__recetas {
+      li {
+        display: block;
+        background-color: rgb(221, 183, 149);
+        color: rgb(121, 66, 69);
+        font-size: 100%;
+        width: 200%;
+        padding: 10% 10% 10% 20%;
+        margin-left: -20%;
+        z-index: 4;
+        transition: background-color 0.25s;
+      }
+    }
+  }
+  .border {
+    padding-top: 13%;
+  }
+  @media screen and (max-width: 767px) {
+    .border {
+      padding-top: 55%;
+    }
+  }
+  main {
+    div {
+      h2 {
+        color: rgb(121, 66, 69);
+        font-family: "lexend";
+        @include animation (zoomIn,1s)  
+      }
+      .receta1 {
+        @include animation (fadeInLeft,1s)  
+      }
+      .receta2 {
+        @include animation (fadeInRight,1s)  
+      }
+      div {
+        .receta {
+          border: 2px solid rgb(121, 66, 69);
+        }
+        h3 {
+          font-weight: bold;
+          color: rgb(121, 66, 69);
+          font-family: "lexend";
+          font-size: 140%;
+          a {
+            text-decoration: none;
+            color: rgb(121, 66, 69);
+          }
+  
+          #color {
+            color: rgb(121, 66, 69);
+          }
+        }
+        p {
+          text-align: justify;
+          font-weight: bold;
+          color: dimgray;
+          font-family: "lexend";
+        }
+      }
+    }
+  }
+  footer {
+    background-color: rgb(221, 183, 149);
+    h6 {
+      color: rgb(121, 66, 69);
+      font-family: "lexend";
+      font-size: 130%;
+    }
+    h7 {
+      color: rgb(121, 66, 69);
+      font-family: "lexend";
+      font-size: 90%;
+    }
+  }
+  

@@ -1,0 +1,313 @@
+.base {
+  color: rgb(221, 183, 149);
+  font-family: "lexend";
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  font-family: "lexend";
+  background-color: rgb(225, 206, 178);
+  color: rgb(121, 66, 69);
+  font-weight: bolder;
+  line-height: 50px;
+  font-size: 110%;
+  z-index: 3;
+  #color {
+    color: rgb(121, 66, 69);
+  }
+  @media screen and (max-width: 991px) {
+    .chau {
+      display: none;
+    }
+  }
+  ul {
+    position: absolute;
+    display: none;
+    font-size: 100%;
+    li {
+      &:hover {
+        background-color: rgb(180, 154, 127);
+        #color {
+          color: rgb(121, 66, 69);
+        }
+      }
+    }
+  }
+  li {
+    position: relative;
+    &:hover ul {
+      display: block;
+    }
+    a {
+      color: rgb(121, 66, 69);
+      text-decoration: none;
+    }
+  }
+  .header__productos {
+    li {
+      display: block;
+      background-color: rgb(221, 183, 149);
+      color: rgb(121, 66, 69);
+      font-size: 100%;
+      width: 180%;
+      padding: 10% 10% 10% 20%;
+      margin-left: -20%;
+      z-index: 4;
+      transition: background-color 0.25s;
+    }
+  }
+  .header__recetas {
+    li {
+      display: block;
+      background-color: rgb(221, 183, 149);
+      color: rgb(121, 66, 69);
+      font-size: 100%;
+      width: 200%;
+      padding: 10% 10% 10% 20%;
+      margin-left: -20%;
+      z-index: 4;
+      transition: background-color 0.25s;
+    }
+  }
+}
+.bordery {
+  padding-top: 8%;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .bordery {
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bordery {
+    padding-top: 55%;
+  }
+}
+.space {
+  padding-top: 3%;
+  color: rgb(225, 206, 178);
+  background-color: rgb(225, 206, 178);
+}
+.space2 {
+  padding-top: 3%;
+  color: white;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .space {
+    padding-top: 12%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+  .space2 {
+    padding-top: 12%;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .space {
+    padding-top: 11%;
+  }
+  .space2 {
+    padding-top: 11%;
+    padding-bottom: 0;
+  }
+}
+main {
+  .description {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    .description {
+      margin-top: 3%;
+      margin-bottom: 2%;
+      display: flex;
+      background-color: rgb(121, 66, 69);
+      color: rgb(221, 183, 149);
+      font-family: "lexend";
+    }
+  }
+  .fondo {
+    background-color: rgb(225, 206, 178);
+  }
+  .gradient {
+    background-image: linear-gradient(to bottom, white, rgb(225, 206, 178));
+  }
+  section {
+    .space {
+      padding-top: 3%;
+      color: rgb(225, 206, 178);
+      background-color: rgb(225, 206, 178);
+    }
+    .space2 {
+      padding-top: 3%;
+      color: white;
+    }
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+      .space {
+        padding-top: 12%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+      }
+      .space2 {
+        padding-top: 12%;
+        padding-bottom: 0;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .space {
+        padding-top: 11%;
+      }
+      .space2 {
+        padding-top: 11%;
+        padding-bottom: 0;
+      }
+    }
+    h4 {
+      @extend .base;
+      background-color: rgb(121, 66, 69);
+    }
+    div {
+      h2 {
+        @extend .base;
+        color: rgb(121, 66, 69);
+      }
+      h5 {
+        @extend .base;
+        line-height: 40px;
+        background-color: rgb(121, 66, 69);
+        a {
+          text-decoration: none;
+          color: rgb(221, 183, 149);
+        }
+        #color2 {
+          color: rgb(221, 183, 149);
+        }
+      }
+
+      div {
+        .foto__fini {
+          border-radius: 250px;
+          width: 60%;
+        }
+        article {
+          h3 {
+            @extend .base;
+            color: rgb(121, 66, 69);
+          }
+          p {
+            text-align: justify;
+            color: dimgray;
+            font-family: "lexend";
+          }
+        }
+
+        div {
+          .contacto__datos {
+            font-weight: bold;
+            color: dimgray;
+            font-family: "lexend";
+            line-height: 250%;
+            font-size: 100%;
+          }
+          @media screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+            .contacto__datos {
+              font-size: 90%;
+            }
+          }
+          ul {
+            background-color: white;
+            line-height: 200%;
+            .contacto__datos--whatsapp {
+              list-style-image: url("../Images/wapp-lista.png");
+            }
+            .contacto__datos--mail {
+              list-style-image: url("../Images/mail-lista.png");
+            }
+            .contacto__datos--pickup {
+              list-style-image: url("../Images/pin-lista.png");
+            }
+            .contacto__datos--auto {
+              list-style-image: url("../Images/car-lista.png");
+            }
+            .contacto__datos--pago {
+              list-style-image: url("../Images/card-lista.png");
+            }
+          }
+          .contacto__map {
+            border: solid 3px rgb(121, 66, 69);
+            width: 90%;
+          }
+          form {
+            .contacto__form {
+              width: 100%;
+              border: solid dimgray 1px;
+              border-radius: 5px;
+            }
+            div {
+              @media screen and (max-width: 767px) {
+                .description {
+                  margin-top: 3%;
+                  margin-bottom: 2%;
+                  display: flex;
+                  background-color: rgb(121, 66, 69);
+                  color: rgb(221, 183, 149);
+                  font-family: "lexend";
+                }
+              }
+              .captions {
+                display: none;
+              }
+              .contacto__form {
+                width: 100%;
+                border: solid dimgray 1px;
+                border-radius: 5px;
+              }
+              label {
+                color: rgb(121, 66, 69);
+                font-family: "lexend";
+                font-weight: bold;
+              }
+            }
+            .button {
+              font-family: "lexend";
+              color: dimgray;
+              font-weight: bold;
+              background-color: rgb(225, 206, 178);
+              border: solid 2px rgb(225, 206, 178);
+              border-radius: 4px;
+              margin-left: 72%;
+            }
+          }
+          div {
+            div {
+              p {
+                text-align: justify;
+                color: dimgray;
+                font-family: "lexend";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: rgb(221, 183, 149);
+  h6 {
+    color: rgb(121, 66, 69);
+    font-family: "lexend";
+    font-size: 130%;
+  }
+  h7 {
+    color: rgb(121, 66, 69);
+    font-family: "lexend";
+    font-size: 90%;
+  }
+}

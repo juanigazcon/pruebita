@@ -1,0 +1,196 @@
+ul {
+    font-family: "lexend";
+    background-color: rgb(225, 206, 178);
+    color: rgb(121, 66, 69);
+    font-weight: bolder;
+    line-height: 50px;
+    font-size: 110%;
+    z-index: 3;
+    #color {
+      color: rgb(121, 66, 69);
+    }
+    @media screen and (max-width: 991px) {
+      .chau {
+        display: none;
+      }
+    }
+    ul {
+      position: absolute;
+      display: none;
+      font-size: 100%;
+      li {
+        &:hover {
+          background-color: rgb(180, 154, 127);
+          #color {
+            color: rgb(121, 66, 69);
+          }
+        }
+      }
+    }
+    li {
+      position: relative;
+      &:hover ul {
+        display: block;
+      }
+      a {
+        color: rgb(121, 66, 69);
+        text-decoration: none;
+      }
+    }
+    .header__productos {
+      li {
+        display: block;
+        background-color: rgb(221, 183, 149);
+        color: rgb(121, 66, 69);
+        font-size: 100%;
+        width: 180%;
+        padding: 10% 10% 10% 20%;
+        margin-left: -20%;
+        z-index: 4;
+        transition: background-color 0.25s;
+      }
+    }
+    .header__recetas {
+      li {
+        display: block;
+        background-color: rgb(221, 183, 149);
+        color: rgb(121, 66, 69);
+        font-size: 100%;
+        width: 200%;
+        padding: 10% 10% 10% 20%;
+        margin-left: -20%;
+        z-index: 4;
+        transition: background-color 0.25s;
+      }
+    }
+  }
+  .border {
+    padding-top: 13%;
+  }
+  @media screen and (max-width: 767px) {
+    .border {
+      padding-top: 55%;
+    }
+  }
+  main {
+    .aparecer{
+      visibility: visible;
+    }
+    .slide {
+      animation: slideInUp;
+      animation-duration: 1s;
+    }
+    div {
+      #precioFinal{
+        color: rgb(121, 66, 69);
+        font-family: "lexend";
+        animation: zoomIn;
+        animation-duration: 1s;
+      }
+      table{
+        .boton {
+          text-align: center;
+          font-family: "lexend";
+          padding-left: 15%;
+          padding-right: 15%;
+          color: dimgray;
+          font-weight: bold;
+          background-color: rgb(225, 206, 178);
+          border: solid 2px rgb(225, 206, 178);
+          border-radius: 4px;
+          text-decoration: none;
+          line-height: 200%;
+          margin-top: 20%;
+
+        }
+      }
+      h2 {
+        color: rgb(121, 66, 69);
+        font-family: "lexend";
+        animation: zoomIn;
+        animation-duration: 1s;
+      }
+      div {
+        div{
+        .tabla{
+        color: dimgray;
+        font-weight: bolder;
+        font-family: "lexend";
+        padding-top: 5;
+        line-height: 120%;
+        
+         }
+        }
+        .tortas {
+          border: solid 1px rgb(121, 66, 69);
+        }
+        .boton {
+          font-family: "lexend";
+          color: dimgray;
+          font-weight: bold;
+          background-color: rgb(225, 206, 178);
+          border: solid 2px rgb(225, 206, 178);
+          border-radius: 4px;
+          text-decoration: none;
+          line-height: 200%;
+          padding-left: 2%;
+          padding-right: 2%;
+          cursor: not-allowed;
+
+        }
+        h5{
+          font-weight: bold;
+          color: rgb(121, 66, 69);
+          font-family: "lexend";
+          font-size: 140%;
+        }    
+        h3 {
+          font-weight: bold;
+          color: rgb(121, 66, 69);
+          font-family: "lexend";
+          font-size: 140%;
+          a {
+            text-decoration: none;
+            color: rgb(121, 66, 69);
+          }
+          #size {
+            font-size: 75%;
+            color: rgb(121, 66, 69);
+          }
+          #color {
+            color: rgb(121, 66, 69);
+          }
+          @media screen and (max-width: 767px) {
+            #size {
+              font-size: 100%;
+            }
+          }
+          @media screen and (min-width: 767px) and (max-width: 950px) {
+            #size {
+              font-size: 75%;
+            }
+          }
+        }
+        @media screen and (min-width: 767px) and (max-width: 950px) {
+          h3 {
+            font-size: 100%;
+          }
+        }
+      }
+    }
+  }
+  
+  footer {
+    background-color: rgb(221, 183, 149);
+    h6 {
+      color: rgb(121, 66, 69);
+      font-family: "lexend";
+      font-size: 130%;
+    }
+    h7 {
+      color: rgb(121, 66, 69);
+      font-family: "lexend";
+      font-size: 90%;
+    }
+  }
+  
